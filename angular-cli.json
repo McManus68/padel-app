@@ -1,6 +1,5 @@
 {
   "project": {
-    "version": "1.0.0-beta.28.3",
     "name": "padel-app"
   },
   "apps": [
@@ -17,17 +16,18 @@
       "tsconfig": "tsconfig.json",
       "prefix": "app",
       "styles": [
-        "./assets/styles/styles.css",
+        "./assets/styles/styles.scss",
         "../node_modules/bootstrap/dist/css/bootstrap.min.css"
       ],
-      "scripts": [],
+      "scripts": [
+      ],
       "environmentSource": "environments/environment.ts",
-       "environments": {
-          "source": "environments/environment.ts",
-          "dev": "environments/environment.ts",
-          "prod": "environments/environment.prod.ts"
-        }
+      "environments": {
+        "source": "environments/environment.ts",
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
       }
+    }
   ],
   "e2e": {
     "protractor": {
@@ -50,19 +50,14 @@
     }
   },
   "defaults": {
-    "styleExt": "css",
-    "prefixInterfaces": false,
-    "inline": {
-      "style": false,
-      "template": false
+    "styleExt": "sass",
+    "class": {
+      "spec": false
     },
-    "spec": {
-      "class": false,
-      "component": true,
-      "directive": true,
-      "module": false,
-      "pipe": true,
-      "service": true
+    "component": {
+      "spec": true,
+      "inlineStyle": false,
+      "inlineTemplate": false
     }
   }
 }
