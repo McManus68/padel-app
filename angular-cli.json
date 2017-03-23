@@ -8,8 +8,7 @@
       "root": "src",
       "outDir": "dist",
       "assets": [
-        "assets",
-        "favicon.ico"
+        "assets"
       ],
       "index": "index.html",
       "main": "main.ts",
@@ -18,15 +17,17 @@
       "tsconfig": "tsconfig.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "./assets/styles/styles.css",
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css"
       ],
       "scripts": [],
-      "environments": {
-        "source": "environments/environment.ts",
-        "dev": "environments/environment.ts",
-        "prod": "environments/environment.prod.ts"
+      "environmentSource": "environments/environment.ts",
+       "environments": {
+          "source": "environments/environment.ts",
+          "dev": "environments/environment.ts",
+          "prod": "environments/environment.prod.ts"
+        }
       }
-    }
   ],
   "e2e": {
     "protractor": {

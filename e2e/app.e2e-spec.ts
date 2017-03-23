@@ -1,5 +1,7 @@
 import { PadelAppPage } from './app.po';
 
+import {} from 'jasmine';
+
 describe('padel-app App', function() {
   let page: PadelAppPage;
 
