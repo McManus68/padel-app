@@ -1,4 +1,13 @@
-<h1>
-  {{title}}
-</h1>
-<alert type="success">hello</alert>
+<div class="padel-container">
+
+  <padel-navigation></padel-navigation>
+  <h1>
+    {{title}}
+  </h1>
+  <p>
+    <ngb-alert [dismissible]="false">
+      <strong>Warning!</strong> Better check yourself, you're not looking too good.
+    </ngb-alert>
+  </p>
+
+</div>
